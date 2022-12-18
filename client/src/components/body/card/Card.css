@@ -1,0 +1,59 @@
+.card{
+    height: 400px;
+    width: 250px;
+    background-color: #7ccd9b;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: rgb(50, 110, 78);
+    margin-bottom: 10px;
+}
+
+
+.card>img{
+    height: 200px;
+    width: 250px;
+    /* border-radius: 10px; */
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#details{
+    text-align: left;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(50, 110, 78);
+    padding: 2px 2px;
+    border-radius: 2px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 115px;
+    border-radius: 4px;
+}
+
+#details::-webkit-scrollbar{
+    display: none;
+}
+#details>p{
+   
+    margin-bottom: 2px;
+    margin-top: 5px;
+}
+
+#title{
+    margin-top: 0px;
+}
+
+#deleteMem{
+    background-color: transparent;
+    border: none;
+  
+    
+}
+#deleteMem:hover{
+    background-color: #548568;
+    border-radius: 5px;
+}
