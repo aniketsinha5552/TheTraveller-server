@@ -15,11 +15,14 @@ mongoose.connect("mongodb+srv://aniket:aniket5552@thetraveller.y7qinnp.mongodb.n
 })
 
 
-
-app.listen( process.env.PORT ||9002,()=>{
-    console.log("SERVER RUNNING ON PORT 9002") 
+port = process.env.PORT || 9002
+app.listen( port,()=>{ 
+    console.log(`SERVER RUNNING ON PORT ${port} `) 
 })
 
+app.get('/',(req,res)=>{
+    res.send({mesaage:"The Traveller"})
+})
 
 app.get('/getMemories',(req,res)=>{
     memoryModel.find({}, (err,result)=>{
