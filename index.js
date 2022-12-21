@@ -25,13 +25,14 @@ app.get('/',(req,res)=>{
 })
 
 app.get('/getMemories',(req,res)=>{
-    memoryModel.find({}, (err,result)=>{
-        if(err){
-            res.json(err);
-        } else{
-            res.json(result);
-        }
-    })
+    res.send({message:"Get Memories"})
+    // memoryModel.find({}, (err,result)=>{
+    //     if(err){
+    //         res.json(err);
+    //     } else{
+    //         res.json(result);
+    //     }
+    // })
 })
 
 app.post('/createMemory',async (req,res)=>{
